@@ -10,13 +10,15 @@ public class User implements Serializable {
     private static final long serialVersionUID = 954510354988569828L;
     private String id;
     private String name;
-    private Date register;
-    private String phone;
-    private String email;
     private String password;
+    private String email;
+    private String phone;
+    private String address;
+    private Date register;
     private String role;
-    private boolean loginState;
-    private boolean inService;
+    private String status;
+    private String special;
+    private String backup;
     private String sessionId;
 
 
