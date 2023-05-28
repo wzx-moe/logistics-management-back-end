@@ -197,7 +197,7 @@ public interface OrderMapper {
     })
     List<Order> getDriverIDPending(@Param("id") String id);
 
-    @Select("SELECT * FROM Orders WHERE driver_id = #{id} AND status != '待处理'")
+    @Select("SELECT * FROM Orders WHERE driver_id = #{id} AND status = '待揽件'")
     @Results({
             @Result(property = "orderID", column = "order_id"),
             @Result(property = "senderID", column = "sender_id"),
